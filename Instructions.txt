@@ -1,0 +1,25 @@
+Testing Code for ECCV Workshop Paper "Unified Transformer Network for Multi-weather Image Restoration
+=====================================================
+Requirements:
+
+torch==1.7.1
+torchvision==0.8.2
+matplotlib
+scikit-image
+opencv-python
+yacs
+joblib 
+natsort 
+h5py 
+tqdm
+einops
+linformer
+timm
+ptflops
+dataclasses
+=====================================================
+For testing the code:
+- Please run "python test.py"
+- Input data should be put in "./testing_data/input" and "./testing_data/target"
+- Results will be stored in "./results/restored/"
+
