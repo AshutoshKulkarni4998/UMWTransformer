@@ -5,3 +5,19 @@ Vision based applications routinely involve restoration as a preprocessing step,
 <p align="left">
   <img src="images/Network2.jpg" width="800"/>
 </p>
+
+Arrange the testing images in the format:
+
+```
+    UMWTransformer-main
+    ├── testing_data
+    |   |── input         # degraded images (In realworld case, keep the same image in both the folders)
+    |   |── gt            # clean images
+```
+Download the pretrained checkpoint from [here](https://drive.google.com/drive/folders/1Uc3V0ZdDT9hST6PfhDffndgPnQd1Yyg6?usp=sharing/)
+
+To run the inference code, run the following commands:
+
+```   
+python python test.py
+```
