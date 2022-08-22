@@ -1098,25 +1098,3 @@ class Network(nn.Module):
         y =   self.output_proj(deconv2)
         return x + z + y
 
-    def flops(self):
-        flops = 0
-        # Input Projection
-        flops += self.input_proj.flops(self.reso,self.reso)
-        # Encoder
-        flops += self.encoderlayer_0.flops()+self.dowsample_0.flops(self.reso,self.reso)
-        flops += self.encoderlayer_1.flops()+self.dowsample_1.flops(self.reso//2,self.reso//2)
-        flops += self.encoderlayer_2.flops()+self.dowsample_2.flops(self.reso//2**2,self.reso//2**2)
-        flops += self.encoderlayer_3.flops()+self.dowsample_3.flops(self.reso//2**3,self.reso//2**3)
-
-        # Bottleneck
-        flops += self.conv.flops()
-
-        # Decoder
-        flops += self.upsample_0.flops(self.reso//2**4,self.reso//2**4)+self.decoderlayer_0.flops()
-        flops += self.upsample_1.flops(self.reso//2**3,self.reso//2**3)+self.decoderlayer_1.flops()
-        flops += self.upsample_2.flops(self.reso//2**2,self.reso//2**2)+self.decoderlayer_2.flops()
-        flops += self.upsample_3.flops(self.reso//2,self.reso//2)+self.decoderlayer_3.flops()
-        
-        # Output Projection
-        flops += self.output_proj.flops(self.reso,self.reso)
-        return flops
