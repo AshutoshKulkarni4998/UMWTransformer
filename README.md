@@ -1,6 +1,6 @@
 
 # Unified Transformer Network for Multi-Weather Image Restoration [ECCVW-2022]
-[Poster]()
+[Poster](https://github.com/AshutoshKulkarni4998/UMWTransformer/tree/main/images/ECCV22_Poster.pdf)
 
 Inference code for the manuscript "Unified Transformer Network for Multi-Weather Image Restoration"
 ## Abstract
