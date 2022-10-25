@@ -17,7 +17,7 @@ Arrange the testing images in the format:
     |   |── input         # degraded images (In realworld case, keep the same image in both the folders)
     |   |── gt            # clean images
 ```
-Download the pretrained checkpoint from [here.](https://drive.google.com/drive/folders/1Uc3V0ZdDT9hST6PfhDffndgPnQd1Yyg6?usp=sharing/)
+Download the pretrained checkpoint from [here.](https://drive.google.com/drive/folders/1Uc3V0ZdDT9hST6PfhDffndgPnQd1Yyg6?usp=sharing)
 
 To run the inference code, run the following commands:
 
