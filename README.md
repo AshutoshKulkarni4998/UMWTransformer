@@ -1,7 +1,7 @@
 
 # Unified Transformer Network for Multi-Weather Image Restoration [ECCVW-2022]
 [![video](https://img.shields.io/badge/Video-Presentation-F9D371)](https://drive.google.com/file/d/1M6c93TcTAIkgcrRZv3IlNZcETavJ5T97/view?usp=share_link)
-[![poster](https://img.shields.io/badge/Poster-F9D371)]((https://github.com/AshutoshKulkarni4998/UMWTransformer/tree/main/images/ECCV22_Poster.pdf)
+[Poster](https://img.shields.io/badge/Poster-F9D371)]((https://github.com/AshutoshKulkarni4998/UMWTransformer/tree/main/images/ECCV22_Poster.pdf)
 
 
 Inference code for the manuscript "Unified Transformer Network for Multi-Weather Image Restoration"
